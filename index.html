@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Friends</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-form">
+            <h2>Welcome</h2>
+            <button class="register-btn">Register</button>
+            <button class="login-btn">Login</button>
+        </div>
+
+        <div class="registration-form" style="display: none;">
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div class="login-form" style="display: none;">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" name="login-username" placeholder="Enter your username" required>
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="login-password" placeholder="Enter your password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="app-container" style="display: none;">
+        <div class="sidebar">
+            <button class="add-friend-btn">Add Friend</button>
+            <button class="call-btn">Call</button>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-info">
+                    <h2 id="friend-name">Friend Name</h2>
+                </div>
+                <button class="call-btn">Start Call</button>
+            </div>
+
+            <div class="messages">
+                <!-- Messages will appear here -->
+                <div class="message received">
+                    <p><strong>Friend:</strong> Hello!</p>
+                </div>
+                <div class="message sent">
+                    <p><strong>You:</strong> Hi, how are you?</p>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="chat-input" placeholder="Type a message..." />
+                <button class="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
