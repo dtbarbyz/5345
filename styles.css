@@ -1,0 +1,183 @@
+/* Общий стиль страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стиль для контейнера с формами аутентификации */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стиль для формы регистрации и логина */
+.auth-form h2 {
+    text-align: center;
+}
+
+.auth-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.auth-form button:hover {
+    background-color: #45a049;
+}
+
+/* Стиль для формы регистрации */
+.registration-form, .login-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.registration-form input, .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.registration-form button, .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.registration-form button:hover, .login-form button:hover {
+    background-color: #45a049;
+}
+
+/* Стиль для контейнера с чат-приложением */
+.app-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Сайдбар для кнопок */
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.add-friend-btn,
+.call-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.add-friend-btn:hover,
+.call-btn:hover {
+    background-color: #45a049;
+}
+
+/* Контейнер чата */
+.chat-container {
+    flex-grow: 1;
+    background-color: #1e1e2f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-info h2 {
+    color: white;
+    margin: 0;
+}
+
+/* Сообщения */
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin: 20px 0;
+}
+
+.message {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.received {
+    background-color: #444;
+}
+
+.sent {
+    background-color: #4CAF50;
+    align-self: flex-end;
+}
+
+/* Ввод сообщения */
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chat-input {
+    width: 85%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #2a2a3b;
+    color: white;
+}
+
+.send-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.send-btn:hover {
+    background-color: #45a049;
+}
